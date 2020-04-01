@@ -12,8 +12,8 @@ public class Main {
         num = scanner.nextInt();
         } while ( num < 1 || num > 7);
         num-=1;
-        String day[] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satuday", "Sunday"};//забыл про switch
-        for (int i=0; i<7; i++){
+        String day[] = {"Monday, Понеділок, Понедельник", "Tuesday, Вівторок, Вторник", "Wednesday, Середа, Среда", "Thursday, Четвер, Четверг" , "Friday, П'ятниця, Пятница", "Satuday, Субота, Субота", "Sunday, Неділя, Воскресенье"};
+        for (int i=0; i<7; i++){ //забыл про switch
             if (i==num) {
                 System.out.println(day[i]);
                 break;
